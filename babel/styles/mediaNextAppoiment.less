@@ -1,0 +1,150 @@
+
+@media (min-width: 0px) and (max-width: 770px) {
+    #programarCitaMedica .innerTd table .collapsable td .collapsableInner .collapsableInnerDiv .box .inner-box{
+        margin-top: 25px;
+    }
+    .toggleDate{
+       padding: 0px !important;
+       margin: 10px 0px!important;
+       .col-xs-12{
+           padding: 0px !important;
+       }
+
+       .inputDate{
+           width: 100%;
+           margin-top: 10px;
+           color:#333;
+       }
+    }
+
+    .buttonsArea{
+        padding: 0px;
+        margin-top: 0px;
+        button{
+            width: 100%!important;
+            margin:0px !important;
+        }
+    }
+}
+@media (min-width: 0px) and (max-width: 1024px) {
+    #programarCitaMedica{
+        .table>thead:first-child>tr th{
+            &.specialist{
+                p {
+                    width: 130px !Important;
+                }
+            }
+            padding: 10px 15px;
+            border-right: 1px solid #ccc;
+            
+                p{
+                    width: 100px!important;
+                }
+            
+            &:last-child{
+                border-right: 0px;
+            }
+        } 
+        .detalleInner,
+        .InnerBox{
+                width: 100px;
+                padding: 0px 0px 0px 0px;
+                margin: 0px 0px 0px 0px;
+        }
+        .table-striped{
+            tr{
+                th{
+                    width: 8%;
+                }
+            }
+        }
+
+        .innerTd{
+            tr{
+                td{
+                    width: 15%;
+                }
+            }
+        }
+        
+
+        th{
+            p{
+                width: 120px;
+                padding: 0px 0px 0px 0px;
+                margin: 0px 0px 0px 0px;
+            }
+        }
+        .verDetalleP{
+            width: 160px;
+        }
+     .dropdownDesktop{
+         display: none;
+     }
+     .dropdownMobil{
+         display: block;
+     }   
+    .table-parent{
+        position: inherit;
+        .collapsableInner{
+                .collapsableInnerWrapper{
+                    position: absolute;
+                    height: 0px;
+                    overflow: hidden;
+                    -webkit-transition: 0.5s ease;
+                    -o-transition: 0.5s ease;
+                    transition: 0.5s ease;
+                }
+        } 
+    }
+    .table>thead:first-child>tr:first-child>th:last-child{
+        display: none;
+    }
+    .innerTd table > tr:first-child td:last-child{
+        display: none;
+    }
+
+    .table>thead:first-child>tr:first-child>th:first-child{
+        display: table-cell;
+        padding: 0px !important;
+        p{
+            width: 85px !important;
+        }
+    }
+    .innerTd table> tr:first-child td:first-child{
+        display: table-cell;
+        width: 1.5%;
+    }
+
+    .tableContentBorder{
+        overflow-x: auto;
+        & >.table{
+            width:805px;
+            .collapsableInnerDiv{
+                padding: 30px 0px !Important;
+                overflow: hidden;
+                margin-right: 30px;
+                .box {
+                    button,
+                    .eventComponent
+                    {
+                        width: 100% !important;
+                        margin:20px 0px 0px 0px !important;
+                    }
+                    select{
+                        width: 100% !important;
+                        margin:0px;
+                    }
+                    .eventComponent{
+                        .dropdown.btn-group{
+                            button{
+                                margin-top:0px!important;
+                            } 
+                        }
+                    }
+                } 
+             }
+        } 
+    }
+    }
+}

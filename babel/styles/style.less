@@ -1,0 +1,226 @@
+#asignarCitaMedica{
+    *:focus{
+        outline: none;
+    }
+    background-color: rgb(249, 249, 249);
+    padding: 20px 0;
+    position: relative;
+    z-index: 3;
+    .loadingWraper {
+        border-radius: 10px;
+        z-index: 6;
+    }
+    h1,h2,h3,h4,h5,h6,p,label {
+        font-family: Roboto;
+    }
+    h1{
+        font-weight: 700;
+        color: #000000;
+    }
+    p{
+        color: #999999;
+    }
+    .devicesOther{
+        display: none;
+    }
+    .headerBox{
+        padding: 20px 0;
+        h3{
+            color: #979797;
+            font-weight: 800;
+        }
+        div > a{
+            float: right;
+            width: 40%;
+            height: 36px;
+            padding: 8px;
+        }
+    }
+    .contentBox{
+        padding: 0px 15px 20px 15px;
+        margin-top: -40px;
+    }
+
+    .select-custom{
+        width: 100%;
+        background-color: #fff;
+        border-color: #ff6600;
+        padding: 5px 10px;
+        text-align: center;
+        border: 1px solid;
+        border-radius: 7px;
+        font-weight: normal;
+    }
+
+    // Style Panel 
+    .tab-content{
+        background-color: #fff;
+        border-bottom: 1px solid #d8d5d5;
+        border-left: 2px solid #d8d5d5;
+        border-right: 2px solid #d8d5d5;
+        border-radius: 0px 0px 12px 12px;
+        -moz-box-shadow: 0px 1px 0px #b0b0b0;
+        -webkit-box-shadow:  0px 1px 0px #b0b0b0;
+        box-shadow: 0px 1px 0px #b0b0b0;
+    }
+    .nav-tabs>li>a {
+        color: #555;
+        background-color: #dddddd;
+        border-top: 1px solid #d8d5d5;
+        border-left: 2px solid #d8d5d5;
+        border-right: 2px solid #d8d5d5;
+        border-bottom-color: transparent;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 14px;
+        padding: 8px 20px;
+        border-radius: 8px 8px 0 0;
+    }
+    .nav-tabs{
+        width: 100%;
+    }
+    .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+        color: #ff661d !important;
+        font-weight: 600;
+        background-color: #fff;
+    }
+
+    #seleccionarAfiliado{
+        margin-top: 20px;
+        position: relative;
+        height: 46px;
+        width: 60%;
+        float: right;
+        z-index: 2;
+        .formSelect{
+            padding-right: 0;
+            float: right;
+            label{
+                float: right;
+            }
+        }
+    }
+    #proximasCitas{
+       .contentProximasCitas{
+           padding: 40px 40px;
+           margin: 20px 0 20px 0;
+           text-align: center;
+       }
+    }
+    #citaNoEncontrada{
+        .contentCitaNoEncontrada{
+            padding: 40px 40px;
+            margin: 20px 0 20px 0;
+            text-align: center;
+            i{
+                 font-size: 80px;
+                 color: #686868;
+            }
+            h5{
+             color: #686868;
+             font-weight: 600;
+             padding: 15px 0;
+                 &:first-letter{
+                     text-transform: capitalize
+                 }
+                span{
+                 color: #686868;
+                 word-spacing: 2px;
+                 font-weight: 400;
+                     &:first-letter{
+                         text-transform: capitalize
+                     }
+                 }
+            }
+            a{
+             width: 25%;
+             height: 36px;
+             padding: 8px;
+            }
+        }
+     }
+    #historialCitaMedica{
+        .btn[disabled] {
+            color: #999999 !important;
+            border-radius: 0px !important;
+            background: none !important;
+            border: none !important;
+        }
+        .tableContentBorder{
+            padding: 20px 30px;
+            table{
+                margin-bottom: 0 !important;
+                thead{
+                    tr{
+                        th{
+                            font-size: 12px;
+                            text-align: center;
+                            font-weight: 600;
+                            border: 1px solid #ebe6e6;
+                            border-top: none;
+                            &:first-child{
+                                border-left: none;
+                            }
+                            &:last-child{
+                                border-right: none;
+                            }
+                        }
+                    }
+                }
+                tbody{
+                    tr{
+                        td{
+                            font-size: 12px;
+                            word-break: break-word;
+                            vertical-align: middle;
+                            padding: 5px 10px;
+                            border: 1px solid #ebe6e6;
+                            i{
+                                margin-right: 8px;
+                                word-break: normal;
+                                margin-left: 5px;
+                            }
+                            span{
+                                font-size: 10px;
+                                font-weight: 400;
+                            }
+                            span.label {
+                                padding: .2em 3em .2em !important;
+                                border-radius: 50px !important;
+                                background-color: #ffffff !important;
+                            }
+                            .label-error{
+                                border: 1px solid #d9534f !important;
+                                color: #d9534f !important;
+                            }
+                            .label-warning{
+                                border: 1px solid orange !important;
+                                color: orange !important;
+                            }
+                            .label-success{
+                                border: 1px solid green !important;
+                                color: green !important;
+                            }
+                            a.btn.btn-link {
+                                text-transform: capitalize !important;
+                                font-size: 12px !important;
+                            }
+                            &:first-child{
+                                border-left: none;
+                            }
+                            &:last-child{
+                                border-right: none;
+                            }
+                            &:nth-child(5), &:nth-child(6){
+                                text-align: center;
+                            }
+                        }
+                        &:nth-child(4){
+                            border-bottom: 1px solid #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,315 @@
+.dropdownDesktop{
+    display: block;
+    li.disabled {
+        pointer-events: none;
+    }
+}
+.dropdownMobil{
+        display: none;
+}
+
+.toggleDate{
+    .selectDate{
+        padding: 0px;
+        margin:0px;
+        .ms-TextField-fieldGroup{
+            border:0px;
+            input{
+                border: 1px solid #ff944d;
+                background: #f60;
+                border-radius: 7px;
+                &::placeholder {
+                    color: #fff !important;
+                }
+
+                &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                    color: #fff !important;
+                }
+
+                &::-ms-input-placeholder { /* Microsoft Edge */
+                    color: #fff !important;
+                }
+                &.active{
+                    color: #ff944d;
+                    background: #ffffff;
+                    border: 1px solid #ff944d;
+                    box-shadow:none;
+                    &::placeholder {
+                    color: #ff944d!important;
+                    }
+
+                    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                        color: #ff944d!important;
+                    }
+
+                    &::-ms-input-placeholder { /* Microsoft Edge */
+                        color: #ff944d !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.toggleNoxtDate{
+    padding: 0px;
+    margin: 0px;
+    
+    .btn.btn-nextDate{
+        &.active{
+            color: #ff944d;
+            background: #ffffff;
+            border: 1px solid #ff944d;
+            box-shadow:none;
+        }
+        width: 100%;
+        padding: 5px;
+    }
+}
+
+.buttonsArea{
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top:1px solid #ccc;
+    .btn{
+        padding: 5px;
+        width: 153px;
+        margin-left: 20px;
+    } 
+}
+
+.mensajeCanclar{  
+        .mensajeCanclarInner{
+            margin-bottom: 10px;
+            
+        }
+        ul{
+              padding-left: 0px;
+            text-align: left;
+            li{
+                list-style: none;
+                strong{
+                    display: block;
+                    padding: 5px 0px;
+                }
+            }
+        }
+      }  
+#programarCitaMedica{
+
+    .collapsableInnerDiv{
+           h3{
+                min-height: 50px;
+            }
+      } 
+    
+padding: 20px 30px;    
+.table>thead:first-child>tr:first-child>th:last-child{
+        display: table-cell;
+}
+.innerTd table > tr:first-child td:last-child{
+    display: table-cell;
+}
+
+.table>thead:first-child>tr:first-child>th:first-child{
+    display: none;
+}
+.innerTd table > tr:first-child td:first-child{
+    display: none;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd){
+        background-color: #f5f8fa;
+}
+
+.table>thead:first-child>tr th{
+    padding: 10px 15px;
+    border-right: 1px solid #ccc;
+    p{
+        font-size: 13px;
+    }
+    &.specialist{
+        p{
+            width: 79px;
+        }
+    }
+    &:last-child{
+        border-right: 0px;
+    }
+}
+
+.especialidadCelda{
+    display: block;
+    width: 120px !important;
+    overflow: hidden;
+    font-size: 10px;
+    color: #aaa;
+    font-family: "Roboto Medium", sans-serif;
+    font-weight: 500;
+    margin-top: 5px;
+}
+.relative{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+.big-ico{
+    vertical-align: top;
+    font-size: 36px;
+    padding-top: 5px;
+}
+.big-text{
+    font-size: 20px;
+}
+
+.innerTd{
+    width: 100%;
+    padding: 0px!important;
+    i{
+        padding-right: 10px;
+        
+    }
+    .verSede{
+        display: block;
+        color: #ff6600;
+        &:hover,
+        &:focus,
+        &:visited,
+        &:active{
+            display: block;
+            color: #ff6600;
+        }
+    }
+    table{
+        background-color: transparent!important;
+        margin-bottom: 0px;
+        width: 100%;
+        padding: 0px!important;
+            tr{
+                &.lightedRow{
+                    background-color: #dce4ea;
+                }
+                width: 100%;
+                td{
+                    padding: 10px 15px;
+                    border-right: 1px solid #ccc;
+                    &:last-child{
+                        border-right:0px;
+                    }
+                    &.firstEl{
+                        button{
+                            width: 120px;
+                        }
+                    }
+                }
+                &:last-child{
+                    background: #ffffff;
+                }
+            }
+
+            button{
+                &.verDetalle{
+                    color: #ff6600;
+                    background: transparent;
+                    &:after{
+                        content: "\f13a";
+                        margin-left: 5px;
+                        display: inline-block;
+                        font: normal normal normal 14px/1 FontAwesome;
+                    }
+
+                    &:hover,
+                    &:focus,
+                    &:visited,
+                    &:active{
+                        background: transparent;
+                        box-shadow: none;
+                        border-color:transparent;
+                        outline: 0px;
+                        color: #ff6600;
+                    }
+                    &.abre{
+                        &:after{
+                            content: "\f139";
+                        }
+                    }
+                }
+            }
+            
+            .collapsable{
+                height: 0px;
+                overflow: hidden;
+                td{
+                    padding: 0px;
+                    .collapsableInner{
+                        height: 0px;
+                        overflow: hidden;
+                        -webkit-transition: 0.5s ease;
+                        -o-transition: 0.5s ease;
+                        transition: 0.5s ease;
+                        .collapsableInnerDiv{
+                            padding: 30px 15px 55px;
+                            overflow: hidden;
+                            .box{
+                                button{
+                                    display: block;
+                                    width: 90%;
+                                    margin:0px auto 20px;
+                                    padding: 5px;
+                                }
+                                .eventComponent{
+                                    display: block;
+                                    margin:0px auto 20px;
+                                    width: 90%;
+                                    .dropdown.btn-group{
+                                        width: 100%;
+                                        .dropdown-menu{
+                                            width: 100%;
+                                        }
+                                        button{
+                                            width: 100%;
+                                            margin: 0px;
+                                        }
+                                    }
+                                }
+                                .box-paddingRight{
+                                    padding-right: 10px;
+                                    &:last-child{
+                                        padding-right: 0px;
+                                    }
+                                }
+                                .boxLabel{
+                                    font-size: 16px;
+                                }
+                                .boxLabel-valor{
+                                    font-size: 16px;
+                                    font-weight: bold;
+                                    color: #81ba00;
+                                    font-family:"Roboto Medium", sans-serif
+                                }
+                                .inner-box{
+                                    margin-top: 20px;
+                                    i{
+                                        width: 8%;
+                                        vertical-align: top;
+                                        padding-top: 3px;
+                                    }
+                                    .box-div{
+                                        width: 90%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    }
+}
+}
